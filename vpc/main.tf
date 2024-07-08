@@ -6,14 +6,13 @@ resource "aws_vpc" "dev_vpc"{
   }
 }
 
-#vcp_subnets
+#vcp_public_subnets
 resource "aws_subnet" "public_subnet_1"{
   availability_zone = "us-east-1a"
   cidr_block =  var.public_subnet_1_cidr_block
   vpc_id = aws_vpc.dev_vpc.id
 }
 
-#public_subnet
 resource "aws_subnet" "public_subnet_2"{
   availability_zone = "us-east-1b"
   cidr_block =  var.public_subnet_2_cidr__block

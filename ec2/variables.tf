@@ -1,3 +1,11 @@
+#provider
+variable "region" {
+  description = "aws region where you are ready to deploy at"
+  type        = string
+  default     = "us-east-1"
+}
+
+
 #vpc variable
 variable "vpc_cidr" {
   description = "The CIDR block for the VPC"

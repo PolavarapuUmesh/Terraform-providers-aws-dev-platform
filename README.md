@@ -98,7 +98,7 @@ Navigate to a Module Directory:
 
 sh
 Copy code
-cd <module-name>
+cd <module-name>m
 Initialize Terraform:
 
 sh
